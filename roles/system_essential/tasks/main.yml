@@ -23,6 +23,9 @@
     - python-apt
     - python-mysqldb
     - python-psycopg2
+    - vim
+    - python-pip
+  
   sudo: yes
 
 # TODO : Check this to work properly. Ideally change to check "lspci | grep nvidia -i"

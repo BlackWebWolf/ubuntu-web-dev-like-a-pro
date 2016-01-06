@@ -65,4 +65,4 @@
   apt: name="oracle-java7-installer" state=present
   sudo: yes
 
-- include: zsh.yml
+#- include: zsh.yml

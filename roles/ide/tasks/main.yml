@@ -27,7 +27,7 @@
 
 
 - name: Download PyCharm
-  shell: axel -n {{ downloadThreads }} http://download.jetbrains.com/python/pycharm-community-{{ vPyCharm }}.tar.gz chdir={{ downloadDir }} creates=pycharm-community-{{ vPyCharm }}.tar.gz
+  shell: axel -n {{ downloadThreads }} https://d1opms6zj7jotq.cloudfront.net/python/pycharm-community-5.0.3.tar.gz chdir={{ downloadDir }} creates=pycharm-community-{{ vPyCharm }}.tar.gz
 
 - name: Install PyCharm
   shell: mkdir -p {{ installDir }}/pycharm-community-{{ vPyCharm }} && tar -xf {{ downloadDir }}/pycharm-community-{{ vPyCharm }}.tar.gz -C {{ installDir }}/pycharm-community-{{ vPyCharm }} --strip-components=1 creates={{ installDir }}/pycharm-community-{{ vPyCharm }}

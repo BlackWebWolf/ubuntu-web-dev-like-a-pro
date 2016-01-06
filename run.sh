@@ -24,13 +24,13 @@ echo $warningtext
 case "$1" in
         prepare)
             echo "Install Ansbile"
-            sudo add-apt-repository ppa:rquillo/ansible
+            sudo apt-add-repository ppa:ansible/ansible
             sudo apt-get update -y
             sudo apt-get install ansible -y
             echo "Install GIT"
             sudo apt-get install git -y
             echo "Clone ubuntu-web-dev-like-a-pro"
-            git clone https://github.com/iJackUA/ubuntu-web-dev-like-a-pro ~/ubuntu-web-dev-like-a-pro
+            git clone https://github.com/BlackWebWolf/ubuntu-web-dev-like-a-pro ~/ubuntu-web-dev-like-a-pro
             echo "DONE! All required soft is preinstalled"
             echo "$provistext"
             ;;

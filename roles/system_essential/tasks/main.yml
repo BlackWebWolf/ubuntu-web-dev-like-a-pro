@@ -25,17 +25,8 @@
     - python-psycopg2
     - vim
     - python-pip
-  
+
   sudo: yes
-
-# TODO : Check this to work properly. Ideally change to check "lspci | grep nvidia -i"
-# maybe like this " result.stdout.find("all systems go") != -1 " ?
-
-- name: install Nvidia drivers
-  apt: pkg=nvidia-current state=latest
-  sudo: yes
-  when: installNvidiaDriver == "yes"
-
 
 - name: add Terra PPA key
   apt_key: keyserver=keyserver.ubuntu.com id=CCDE75CC02463F8A
@@ -48,7 +39,6 @@
     - deb http://ppa.launchpad.net/ozcanesen/terra-terminal/ubuntu raring main
     - ppa:synapse-core/ppa
     - ppa:webupd8team/java
-    - ppa:ubuntu-wine/ppa
   sudo: yes
 
 
@@ -63,7 +53,6 @@
     - terra
     - terminator
     - synapse
-    - wine
   sudo: yes
 
 # JAVA INSTALLATION # Also available oracle-java6-installer and oracle-java8-installer

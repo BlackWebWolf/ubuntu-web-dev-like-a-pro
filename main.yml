@@ -11,12 +11,8 @@
     installNvidiaDriver: "no"
     vPhpStorm: 10.0.1
     vPyCharm: 4.0.4
-    vRubyMine: 7.0.4
-    vODesk: 3.12.9
-    vVagrant: 1.7.2
+    vVagrant: 1.8.1
     vMySQLWB: 6.2.4-1ubu1404
-    v0xDBE: 141.191
-    vRoboMongo: 0.8.4
     vDropbox: 1.6.2
     vRuby_rbenv: 2.2.0
 
@@ -30,5 +26,4 @@
       - web_dev_essential
       - web_dev_tools
 #      - tracker    # uncomment to install oDesk and Elance trackers
-      - media
       - tweak

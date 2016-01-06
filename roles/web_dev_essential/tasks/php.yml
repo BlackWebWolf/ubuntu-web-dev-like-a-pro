@@ -32,14 +32,3 @@
     - { param: date.timezone , value: "Europe/London" }
   sudo: yes
   notify : restart apache
-
-- name: Configure PHP xdebug
-  lineinfile: dest=/etc/php5/mods-available/xdebug.ini regexp="^{{ item.param }} =" line="{{ item.param }} = {{ item.value }}" create=yes mode=0644
-  with_items :
-    - { param: xdebug.remote_enable, value: 1 }
-    - { param: xdebug.remote_handler, value: dbgp }
-    - { param: xdebug.remote_port , value: 9000 }
-    - { param: xdebug.remote_host , value: localhost }
-    - { param: xdebug.cli_color, value: 1 }
-  sudo: yes
-  notify : restart apache

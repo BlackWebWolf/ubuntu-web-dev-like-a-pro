@@ -10,7 +10,7 @@
     downloadThreads: 20
     installNvidiaDriver: "no"
     vPhpStorm: 10.0.1
-    vPyCharm: 4.0.4
+    vPyCharm: 5.0.3
     vVagrant: 1.8.1
     vMySQLWB: 6.2.4-1ubu1404
     vDropbox: 1.6.2
